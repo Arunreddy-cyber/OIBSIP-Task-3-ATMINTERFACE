@@ -159,7 +159,7 @@ public class AtmInterface{
 	
 	public static void main(String[] args) {
 		
-		System.out.println("\n**********WELCOME TO Our ATM SYSTEM**********\n");
+		System.out.println("\n -------- WELCOME TO Our ATM SYSTEM --------\n");
 		System.out.println("1.Register \n2.Exit");
 		System.out.print("Enter Your Choice - ");
 		int choice = takeIntegerInput(2);
@@ -172,7 +172,7 @@ public class AtmInterface{
 				int ch = takeIntegerInput(2);
 				if ( ch == 1 ) {
 					if (b.login()) {
-						System.out.println("\n\n**********WELCOME BACK " + b.name + " **********\n");
+						System.out.println("\n\n -----WELCOME BACK " + b.name + " ------\n");
 						boolean isFinished = false;
 						while (!isFinished) {
 							System.out.println("\n1.Withdraw \n2.Deposit \n3.Transfer \n4.Check Balance \n5.Transaction History \n6.Exit");
